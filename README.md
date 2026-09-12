@@ -1,16 +1,145 @@
-# React + Vite
+# 🎬 FilmFind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FilmFind is a React-based movie search application that allows users to search for movies and explore detailed information such as ratings, genres, cast, directors, runtime, language, awards, and plot.
 
-Currently, two official plugins are available:
+The application uses the **OMDb API** to fetch movie information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 🔎 Search for movies by title
+* 🎬 Display movie posters and titles
+* ⭐ View IMDb ratings
+* 📅 View release year
+* 📝 View movie plot
+* 🎭 View genre, actors, and director
+* ⏱️ View runtime and language
+* 🏆 View awards
+* 📄 Dedicated movie details page
+* 🔙 Easy navigation between pages
+* ⏳ Loading indicators
+* ⚠️ Error handling for invalid searches
+* 📱 Responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+* React.js
+* React Router
+* Material UI (MUI)
+* React Icons
+* OMDb API
+* JavaScript
+* HTML
+* CSS
+* Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+Film_find
+│
+├── src
+│   ├── assets
+│   │   └── components
+│   │       ├── Header.jsx
+│   │       ├── Footer.jsx
+│   │       └── Pages
+│   │           ├── Home.jsx
+│   │           ├── MovieCard.jsx
+│   │           └── MovieDetails.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── public
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## 🔄 How It Works
+
+```text
+Home Page
+    ↓
+Search for a movie
+    ↓
+OMDb Search API
+    ↓
+Search Results
+    ↓
+Select a movie
+    ↓
+Movie Details Page
+    ↓
+OMDb Details API
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Film_find
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will then be available through the local development URL provided by Vite.
+
+## 🔑 API
+
+FilmFind uses the **OMDb API** to retrieve movie information.
+
+Search movies:
+
+```text
+https://www.omdbapi.com/?s=movieTitle
+```
+
+Get movie details:
+
+```text
+https://www.omdbapi.com/?i=imdbID
+```
+
+## 🎯 Purpose
+
+This project was created as a practice project to improve my understanding of:
+
+* React components
+* React Hooks
+* React Router
+* API integration
+* Fetch and asynchronous JavaScript
+* State management
+* Reusable components
+* Material UI
+* Responsive UI design
+
+## 👩‍💻 Author
+
+**Fathima Raswa C. T.**
+
+Computer Science Engineering Graduate
+
+---
+
+ If you find this project useful, feel free to explore the repository.
